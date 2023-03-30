@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
+import {BsFillPlayFill} from 'react-icons/bs'
 import doctor from '../assets/doctor.png'
 import picture1 from '../assets/photo1.jpg'
 import picture2 from '../assets/photo2.jpg'
 import picture3 from '../assets/photo3.jpg'
-import {BsFillPlayFill} from 'react-icons/bs'
+//jika ingin menambahkan foto lain taruh foto di folder assets di src
+//panggil disini dengan cara import (picture...) from '../assets/nama gambar
 
 const Herosection = () => {
   const maxScrollWidth = useRef(0);
@@ -81,9 +83,17 @@ const Herosection = () => {
           icon: picture3,
         },
         {
-            name: '4',
-            icon: picture2,
+          name: '4',
+          icon: picture2,
         },
+        // tambahkan gambar disini
+        /* dengan coding
+          {
+          name: 'angka setelah angka terakhir',
+          icon: nama import diatas,
+          },
+        */
+
       ];
   return (
     <>
